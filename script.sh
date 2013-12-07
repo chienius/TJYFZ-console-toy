@@ -39,7 +39,7 @@ elif [ $1 = "homework" ]; then
 	hwContent=${hwContent#*body>}		#delete useless prefix
 	hwContent=${hwContent%<script*}		#delete useless suffix
 	hwContent=${hwContent##*listtable\">}
-	echo $hwContent | sed "s/<\/table>.*$//g;s/<\/th>/\n/g;s/<\/P>/\n/g;s/<\/SPAN>/\n/g;s/<\/td> <\/tr> <tr> /\n/g;s/ <\/tr> <tr> //g;s/\w> <\w//g;s/<.[^>]*>//g;s/\n\s*$//g"	#really like a mess. I'd rewrite it the other day. 
+	echo $hwContent | sed "s/<\/table>.*$//g;s/<\/th>/\n/g;s/<\/P>/\n/g;s/<\/SPAN>/\n/g;s/[^\n]<\/td> <\/tr> <tr> /\n\n/g;s/<\/td> <\/tr> <tr> /\n/g;s/ <\/tr> <tr> //g;s/\w> <\w//g;s/<.[^>]*>//g;s/\n\s*$//g;s/\&nbsp\;/ /g"	#really like a mess. I'd rewrite it the other day. 
 
 else
 	echo No such command!
