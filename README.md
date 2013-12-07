@@ -3,11 +3,11 @@ TJYFZ-console-toy
 
 ##Commands
 
-*login    Please run this for initial setting.
+* login    Please run this for initial setting.
 
-*homework [YYYY-MM-DD]    View homework, specified by date, show today default.
+* homework [YYYY-MM-DD]    View homework, specified by date, show today default.
 
-*msg    View messages, requries `w3m`.
+* msg    View messages, requries `w3m`.
 
 ##Known issues
 
