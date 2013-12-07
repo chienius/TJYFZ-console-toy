@@ -10,7 +10,7 @@ TJYFZ平台Console脚本实现
 
 * `login`    Please run this for initial setting.
 
-* `homework [YYYY-MM-DD]`    View homework, specified by date, show today default.
+* `homework [YYYY-MM-DD]`    View homework, specified by date, show today's by default.
 
 * `msg`    View messages, requries `w3m`.
 
@@ -20,4 +20,5 @@ TJYFZ平台Console脚本实现
 
 ##Todo list
 
-1. 新闻和查看功能
+1. 添加新闻查看功能
+2. 添加消息发送功能
