@@ -1,7 +1,7 @@
 #!/bin/sh
 
 welcomeMsg="\033[1mTJYFZ console toys\033[0m\n\033[33m我们不用很麻烦很累就可以上平台\n     \033[0mPresented by Chienius\n     (c) 2013 chienius.com \n"
-configDir="~/.config/tjyfz"
+configDir="$HOME/.config/tjyfz"
 
 if [ ! -d "$configDir"  ]; then
 	echo -e "You are running the script for the first time. \nPlease use 'login' conmmand to load initial settings first.\n"
