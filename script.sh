@@ -48,7 +48,7 @@ elif [ $1 = "homework" ]; then
 	echo $hwContent | sed "s/<\/table>.*$//g;s/<\/th>/\n/g;s/<\/P>/\n/g;s/\([^\n]\)<\/td> <\/tr> <tr> /\1\n\n/g;s/<\/td> <\/tr> <tr> /\n/g;s/ <\/tr> <tr> //g;s/\w> <\w//g;s/<.[^>]*>//g;s/\n\s*$//g;s/\&nbsp\;/ /g"	#really like a mess. I'd rewrite it the other day. 
 
 elif [ $1 = "msg" ]; then
-	curl http://www.tjyfz1.edu.sh.cn/cjcx/xuesheng/main/yqts.asp?xsk=xs1 -b cookie.txt  --stderr /dev/null | iconv -f gbk -t utf-8 | sed "s/\/cjcx/http:\/\/www.tjyfz1.edu.sh.cn\/cjcx/g" | w3m -T text/html
+	curl http://www.tjyfz1.edu.sh.cn/cjcx/xuesheng/main/yqts.asp?xsk=xs1 -b $configDir/cookie.txt  --stderr /dev/null | iconv -f gbk -t utf-8 | sed "s/\/cjcx/http:\/\/www.tjyfz1.edu.sh.cn\/cjcx/g" | w3m -T text/html
 
 else
 	echo No such command!
