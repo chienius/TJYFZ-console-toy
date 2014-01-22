@@ -12,7 +12,9 @@ TJYFZ平台Console脚本实现
 
 * `homework [YYYY-MM-DD]`    View homework, specified by date, show today's by default.
 
-* `msg`    View messages, requries `w3m`.
+* `msg`    View messages, requires `w3m`.
+
+* `news`	View latest news, requires `w3m`
 
 ##Known issues
 

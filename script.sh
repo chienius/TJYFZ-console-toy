@@ -50,6 +50,9 @@ elif [ $1 = "homework" ]; then
 elif [ $1 = "msg" ]; then
 	curl http://www.tjyfz1.edu.sh.cn/cjcx/xuesheng/main/yqts.asp?xsk=xs1 -b $configDir/cookie.txt  --stderr /dev/null | iconv -f gbk -t utf-8 | sed "s/\/cjcx/http:\/\/www.tjyfz1.edu.sh.cn\/cjcx/g" | w3m -T text/html
 
+elif [ $1 = "news" ]; then
+	curl http://www.tjyfz1.edu.sh.cn//cjcx/xuesheng/main/ggl.asp -b $configDir/cookie.txt --stderr /dev/null | iconv -f gbk -t utf-8 | sed "s/\/cjcx/http:\/\/www.tjyfz1.edu.sh.cn\/cjcx/g;s/<a href=\"[^\"]*\" onClick=\"popUpWindow('\([^\']*\)',this)\">/<a href=\"\1\">/g" | w3m -T text/html
+
 else
 	echo No such command!
 	exit 0
