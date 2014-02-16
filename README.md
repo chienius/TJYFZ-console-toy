@@ -14,7 +14,7 @@ TJYFZ平台Console脚本实现
 
 * `msg`    View messages, requires `w3m`.
 
-* `news`	View latest news, requires `w3m`
+* `news`	View latest news, requires `w3m`.
 
 ##Known issues
 
@@ -22,5 +22,5 @@ TJYFZ平台Console脚本实现
 
 ##Todo list
 
-1. 添加新闻查看功能
+1. ~~添加新闻查看功能~~
 2. 添加消息发送功能
