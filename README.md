@@ -15,6 +15,7 @@ TJYFZ平台Console脚本实现
 * `msg`    View messages, requires `w3m`.
 
 * `news`	View latest news, requires `w3m`.
+* `news2` View latest news from teacher's platform, with some hidden news from students, requires `w3m`
 
 ##Known issues
 
